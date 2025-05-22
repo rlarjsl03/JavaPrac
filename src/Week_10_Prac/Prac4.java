@@ -1,4 +1,4 @@
-package Week_10;
+package Week_10_Prac;
 
 class Circle0 {
     int x;

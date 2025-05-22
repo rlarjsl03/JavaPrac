@@ -1,4 +1,4 @@
-package Week_10.Prac6;
+package Week_10_Prac.Prac6;
 
 import java.util.Scanner;
 

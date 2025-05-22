@@ -1,4 +1,4 @@
-package Week_10;
+package Week_10_Prac;
 
 import java.util.ArrayList;
 import java.util.Scanner;
