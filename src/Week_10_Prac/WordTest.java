@@ -21,9 +21,6 @@ class Word {
         return kor;
     }
     public void Search(String eng) {
-        if (!eng.equals(this.eng)) {
-            System.out.println("없는 단어");
-        }
         if (kor == null){
             System.out.println(eng + " -> 설명 필요");
         }else
@@ -48,7 +45,7 @@ public class WordTest {
         while (flag == true){
             System.out.println("검색할 단어를 입력하시오: (종료 quit)");
             String a = sc.nextLine();
-
+            String b = "";
             if (a.equals("quit")){
                 System.out.println("종료합니다.");
                 flag = false;
@@ -56,8 +53,14 @@ public class WordTest {
             }else {
                 for (int i = 0; i < words.size(); i++) {
                     if (words.get(i).getEng().equals(a)){
+                        b = a;
                         words.get(i).Search(a);
-                    }
+                        break;
+                    } else
+                        b = null;
+                }
+                if (b == null) {
+                    System.out.println("없는 단어");
                 }
             }
         }
