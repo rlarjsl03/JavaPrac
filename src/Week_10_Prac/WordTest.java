@@ -7,7 +7,6 @@ class Word {
     String eng;
     String kor;
 
-
     public Word(String eng) {
         this.eng = eng;
     }
@@ -22,7 +21,7 @@ class Word {
         return kor;
     }
     public void Search(String eng) {
-        if (eng == this.eng) {
+        if (!eng.equals(this.eng)) {
             System.out.println("없는 단어");
         }
         if (kor == null){
@@ -33,7 +32,7 @@ class Word {
 }
 
 
-public class Prac5 {
+public class WordTest {
     public static void main(String[] args) {
         ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("Java", "자바"));
