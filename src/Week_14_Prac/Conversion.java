@@ -31,8 +31,7 @@ class String_S {
                 ss[j] = s[i];
             }
             if (n == s.length) break;
-        }
-        if (stack0 > stack1) System.out.println("result = " + stack1);
+        }if (stack0 > stack1) System.out.println("result = " + stack1);
         else System.out.println("result = " + stack0);
     }
 }
