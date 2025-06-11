@@ -12,7 +12,6 @@ class Day {
         else System.out.println(work + "입니다.");
     }
 }
-
 public class MonthSchedule {    // 요건 잘 함
     public static void main(String[] args) {
         Day[] date = new Day[30];

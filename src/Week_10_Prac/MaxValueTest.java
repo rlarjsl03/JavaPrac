@@ -28,7 +28,7 @@ class Max {
     }
 }
 
-public class Prac2 {
+public class MaxValueTest {
     public static void main(String[] args) {
         Max mt = new Max();
         int r = mt.test(4,6);

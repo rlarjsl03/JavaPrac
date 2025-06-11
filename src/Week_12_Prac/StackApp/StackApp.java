@@ -1,4 +1,4 @@
-package Week_12_Prac;
+package Week_12_Prac.StackApp;
 
 import java.util.Scanner;
 
