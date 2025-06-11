@@ -29,7 +29,7 @@ class CheeseRamyon1 {
     }
 }
 
-public class CompositeRamyonTest {
+public class RamyonTest {
     public static void main(String[] args) {
         int s;
         do {
