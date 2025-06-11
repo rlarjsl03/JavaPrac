@@ -1,6 +1,4 @@
-package LastYearMidtremExam;
-
-import java.util.Arrays;
+package LastMidtremExam;
 
 public class ArrayTest {
     public static void main(String[] args) {

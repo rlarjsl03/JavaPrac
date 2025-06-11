@@ -1,4 +1,4 @@
-package LastYearMidtremExam;
+package LastMidtremExam;
 
 import java.util.Arrays;
 

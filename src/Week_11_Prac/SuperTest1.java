@@ -9,9 +9,11 @@ class SB2 extends SB1 {
     public String xx = x + super.x; // x는 SB2 class에 있는 값, super.x는 SB1 class에서 상속해 온 값 500
     public String yy = "" + y + super.y;    // y는 SB2에서 선언되지 않았기 때문에 SB1에서 상속해 온 값이 super.y와 같음 1000
 }
-//super은 하위 클래스에 의해 가려진 상위 클래스의 멤버 변수나 메소드에 접근할 때 사용
-//두 번째는 상위 클래스에 명시적 생성자를 호출하기 위해 사용
-//final을 사용하면 하위 클래스에서 오버라이딩 불가
+// super은 하위 클래스에 의해 가려진 상위 클래스의 멤버 변수나 메소드에 접근할 때 사용
+// super.멤버 변수 / super.메소드 이름(매개 변수)
+// 두 번째는 상위 클래스에 명시적 생성자를 호출하기 위해 사용
+// super.매개 변수
+// final을 사용하면 하위 클래스에서 오버라이딩 불가
 
 public class SuperTest1 {
     public static void main(String[] args) {

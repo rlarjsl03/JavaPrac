@@ -1,8 +1,8 @@
 package Week_11_Prac;
-
+//포함관계의 표현 예제 10.18
 import java.util.Scanner;
 
-class Ramyon {
+class Ramyon1 {
     String ramyon = "라면";
     String water = "물";
     String onion = "파";
@@ -13,19 +13,23 @@ class Ramyon {
         System.out.println(ramyon + "과 " + onion + "을 넣고 끓여 요리완성. 맛있게 드세요!!!");
     }
 }
-class RiceRamyon extends Ramyon {
+// 상속은 extends 를 사용하는 방법, 하위 클래스에 상위 클래스 변수를 선언하여 사용하는 방법 2가지가 있음
+class RiceRamyon1 {
+    Ramyon1 rm = new Ramyon1();
     String rice = "떡";
     void topping () {
         System.out.println(rice + "을 넣는다");
     }
 }
-class CheeseRamyon extends Ramyon {
+class CheeseRamyon1 {
+    Ramyon1 rm = new Ramyon1();
     String cheese = "치즈";
     void topping () {
         System.out.println(cheese + "를 넣는다");
     }
 }
-public class RamyonTest {
+
+public class CompositeRamyonTest {
     public static void main(String[] args) {
         int s;
         do {
@@ -33,19 +37,19 @@ public class RamyonTest {
             Scanner stdin = new Scanner(System.in);
             s = stdin.nextInt();
             if (s == 1){
-                Ramyon r = new Ramyon();
+                Ramyon1 r = new Ramyon1();
                 r.boilwater();
                 r.cooking();
-            } else if (s == 2){
-                RiceRamyon rr = new RiceRamyon();
-                rr.boilwater();
+            }else if (s == 2){
+                RiceRamyon1 rr = new RiceRamyon1();
+                rr.rm.boilwater();
                 rr.topping();
-                rr.cooking();
-            } else if (s == 3){
-                CheeseRamyon cr = new CheeseRamyon();
-                cr.boilwater();
+                rr.rm.cooking();
+            }else if (s == 3){
+                CheeseRamyon1 cr = new CheeseRamyon1();
+                cr.rm.boilwater();
                 cr.topping();
-                cr.cooking();
+                cr.rm.cooking();
             }
         } while (s != 99);
         System.out.println("감사합니다");
