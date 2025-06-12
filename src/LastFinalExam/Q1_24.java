@@ -28,6 +28,7 @@ public class Q1_24 {
         ArrayList<String> sentence = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         System.out.println("영문 텍스트를 입력하고 세미콜론을 입력하세요.");
+        // A greedy algorithm is any algorithm that follows the problem-solving heuristic of making the "locally" optimal choice at each "stage". In many problems, a greedy strategy does not produce an optimal solution, but a greedy heuristic can yield "locally" optimal solutions that approximate a globally optimal solution in a reasonable amount of time
         while (true) {
             String str = sc.nextLine();
             if (str.equals(";")) {

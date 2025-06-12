@@ -2,7 +2,7 @@ package LastFinalExam;
 
 import java.util.Arrays;    // 배열 라이브러리
 
-public class Boat {
+public class Q1_23 {    // Boat
     public static int solution(int[] people, int limit) {
         //  제한: 탑승인원 두 명
         Arrays.sort(people);    // 몸무게를 오름차순으로 정렬
@@ -20,7 +20,7 @@ public class Boat {
             }
             count++;    // 구명보트 사용 횟수 증가
         }
-        return count;
+            return count;
     }
 
     public static void main(String[] args) {
